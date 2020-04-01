@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StardewValleyFishes", "StardewValleyFishes\StardewValleyFishes.csproj", "{69C1EC12-90B6-4AAA-B976-5FFF55E5865F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StardewValleyFishes.Core", "StardewValleyFishes.Core\StardewValleyFishes.Core.csproj", "{B4F11B9A-5292-4C4E-836B-4E7D3FC20510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StardewValleyFishes.Data", "StardewValleyFishes.Data\StardewValleyFishes.Data.csproj", "{585C9535-A854-4F81-9C81-8BFEED39E8A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69C1EC12-90B6-4AAA-B976-5FFF55E5865F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C1EC12-90B6-4AAA-B976-5FFF55E5865F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C1EC12-90B6-4AAA-B976-5FFF55E5865F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C1EC12-90B6-4AAA-B976-5FFF55E5865F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F11B9A-5292-4C4E-836B-4E7D3FC20510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F11B9A-5292-4C4E-836B-4E7D3FC20510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F11B9A-5292-4C4E-836B-4E7D3FC20510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F11B9A-5292-4C4E-836B-4E7D3FC20510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{585C9535-A854-4F81-9C81-8BFEED39E8A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{585C9535-A854-4F81-9C81-8BFEED39E8A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{585C9535-A854-4F81-9C81-8BFEED39E8A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{585C9535-A854-4F81-9C81-8BFEED39E8A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC4D15A8-EFC6-4377-9E61-A76307E96654}
+	EndGlobalSection
+EndGlobal
