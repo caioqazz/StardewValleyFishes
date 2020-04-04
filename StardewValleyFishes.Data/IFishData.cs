@@ -8,7 +8,11 @@ namespace StardewValleyFishes.Data
 {
     public interface IFishData
     {
-        IEnumerable<Fish> GetAll();
+        IEnumerable<Fish> GetFishesByName( string name);
+        Fish GetById(int id);
+        Fish Update(Fish updatedFish);
+        Fish Add(Fish newFish);
+        int Commit();
     }
     public class InMemoryFishData : IFishData
     {
@@ -25,9 +29,38 @@ namespace StardewValleyFishes.Data
     };
         }
 
-        public IEnumerable<Fish> GetAll()
+        public Fish GetById(int id)
+        {
+            return fishes.SingleOrDefault(r => r.Id == id);
+        }
+        public Fish Add(Fish newFish)
+        {
+            fishes.Add(newFish);
+            newFish.Id = fishes.Max(r => r.Id) + 1;
+            return newFish;
+        }
+
+        public Fish Update(Fish updatedFish)
+        {
+            var fish = fishes.SingleOrDefault(r => r.Id == updatedFish.Id);
+            if (fish != null)
+            {
+                fish.Name = updatedFish.Name;
+                fish.Local = updatedFish.Local;
+            }
+            return fish;
+        }
+
+        public int Commit()
+        {
+            return 0;
+        }
+
+
+        public IEnumerable<Fish> GetFishesByName(string name = null)
         {
             return from r in fishes
+                   where string.IsNullOrEmpty(name) || r.Name.StartsWith(name)
                    orderby r.Name
                    select r;
         }
