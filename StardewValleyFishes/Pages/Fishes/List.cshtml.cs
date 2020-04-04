@@ -18,19 +18,23 @@ namespace StardewValleyFishes.Pages.Fishes
 
             public string Message { get; set; }
             public IEnumerable<Fish> Fishes { get; set; }
+           
+            [BindProperty(SupportsGet = true)]
+            public string SearchTerm { get; set; }
 
-            public ListModel(IConfiguration config,
+
+        public ListModel(IConfiguration config,
                              IFishData fishData)
             {
                 this.config = config;
                 this.fishData = fishData;
             }
-
+            
             public void OnGet()
             {
                 Message = config["Message"];
-                 Fishes = fishData.GetAll();
-            }
+                 Fishes = fishData.GetFishesByName(SearchTerm);
+        }
         
     }
 }
