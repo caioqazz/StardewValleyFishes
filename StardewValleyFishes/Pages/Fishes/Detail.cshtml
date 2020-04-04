@@ -1,0 +1,16 @@
+﻿@page
+@model StardewValleyFishes.Pages.Fishes.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+
+<div>
+    @Model.Fish.Name
+</div>
+<div>@Model.Fish.Local</div>
+<div>@Model.Fish.Description</div>
+<div>@Model.Fish.Season</div>
+
+<a asp-page="./List" class="btn btn-primary">See All Restaurants</a>

@@ -26,6 +26,7 @@
             <th scope="col">Local</th>
             <th scope="col">Description</th>
             <th scope="col">Season</th>
+            <th scope="col">Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -38,6 +39,13 @@
             <td>@fish.Local</td>
             <td>@fish.Description</td>
             <td>@fish.Season</td>
+            <td>
+                <a class="btn btn-lg"
+                   asp-page="./Detail"
+                   asp-route-fishId="@fish.Id">
+                   Detail
+                </a>
+            </td>
         </tr>
         }
     </tbody>
